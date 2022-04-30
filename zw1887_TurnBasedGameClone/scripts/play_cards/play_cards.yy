@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "input",
+    "path": "folders/Scripts/input.yy",
   },
   "resourceVersion": "1.0",
-  "name": "createDeck",
+  "name": "play_cards",
   "tags": [],
   "resourceType": "GMScript",
 }
