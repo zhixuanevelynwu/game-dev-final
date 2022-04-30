@@ -6,6 +6,7 @@
     {"id":{"name":"snd_lose","path":"sounds/snd_lose/snd_lose.yy",},"order":2,},
     {"id":{"name":"spr_card","path":"sprites/spr_card/spr_card.yy",},"order":0,},
     {"id":{"name":"take_back","path":"scripts/take_back/take_back.yy",},"order":0,},
+    {"id":{"name":"compute_decision","path":"scripts/compute_decision/compute_decision.yy",},"order":1,},
     {"id":{"name":"play_cards","path":"scripts/play_cards/play_cards.yy",},"order":0,},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":1,},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},"order":3,},

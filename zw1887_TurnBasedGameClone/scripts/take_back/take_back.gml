@@ -16,15 +16,13 @@ function take_back(){
 					player_selected_card = selected_card0;
 				}
 				audio_play_sound(snd_deal ,10 ,0);
-				selected_card0 = noone;
-				selected_card1 = noone;
 			}
 			
 			if (taken_back) {
 				wait_timer = 0;
 				// take ai's card back
-				r = irandom_range(0, 1);
-				if (r == 0) {
+				d = compute_decision();
+				if (d == 0) {
 					ai_selected_card = ai_selected_card0;
 					ai_selected_card1.target_y = global.ai_hand_y;
 				} else {
@@ -33,6 +31,8 @@ function take_back(){
 				}
 				ai_selected_card0 = noone;
 				ai_selected_card1 = noone;
+				selected_card0 = noone;
+				selected_card1 = noone;
 				taken_back = false;
 				global.state = global.state_compare; 
 			}
