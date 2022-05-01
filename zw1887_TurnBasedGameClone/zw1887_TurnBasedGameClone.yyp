@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"snd_flip","path":"sounds/snd_flip/snd_flip.yy",},"order":1,},
     {"id":{"name":"create_deck","path":"scripts/create_deck/create_deck.yy",},"order":0,},
+    {"id":{"name":"spr_swap","path":"sprites/spr_swap/spr_swap.yy",},"order":1,},
     {"id":{"name":"replace_card","path":"scripts/replace_card/replace_card.yy",},"order":1,},
     {"id":{"name":"snd_lose","path":"sounds/snd_lose/snd_lose.yy",},"order":2,},
     {"id":{"name":"spr_eye","path":"sprites/spr_eye/spr_eye.yy",},"order":0,},
@@ -14,6 +15,7 @@
     {"id":{"name":"obj_clairvoyant","path":"objects/obj_clairvoyant/obj_clairvoyant.yy",},"order":0,},
     {"id":{"name":"decide_winner","path":"scripts/decide_winner/decide_winner.yy",},"order":0,},
     {"id":{"name":"discard_cards","path":"scripts/discard_cards/discard_cards.yy",},"order":1,},
+    {"id":{"name":"obj_swap","path":"objects/obj_swap/obj_swap.yy",},"order":1,},
     {"id":{"name":"dogica","path":"fonts/dogica/dogica.yy",},"order":0,},
     {"id":{"name":"deal_cards","path":"scripts/deal_cards/deal_cards.yy",},"order":0,},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"order":0,},
