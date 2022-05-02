@@ -18,9 +18,10 @@
     {"id":{"name":"obj_swap","path":"objects/obj_swap/obj_swap.yy",},"order":1,},
     {"id":{"name":"dogica","path":"fonts/dogica/dogica.yy",},"order":0,},
     {"id":{"name":"deal_cards","path":"scripts/deal_cards/deal_cards.yy",},"order":0,},
+    {"id":{"name":"Rm_End","path":"rooms/Rm_End/Rm_End.yy",},"order":1,},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"order":0,},
     {"id":{"name":"snd_deal","path":"sounds/snd_deal/snd_deal.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Rm_Gameplay","path":"rooms/Rm_Gameplay/Rm_Gameplay.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
@@ -41,7 +42,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Rm_Gameplay","path":"rooms/Rm_Gameplay/Rm_Gameplay.yy",},},
+    {"roomId":{"name":"Rm_End","path":"rooms/Rm_End/Rm_End.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
