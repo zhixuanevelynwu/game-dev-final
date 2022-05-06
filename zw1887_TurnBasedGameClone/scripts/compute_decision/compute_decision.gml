@@ -5,9 +5,6 @@ function compute_decision(){
 		ai_cards = [ai_selected_card0.img_index, ai_selected_card1.img_index];
 		pl_cards = [selected_card0.img_index, selected_card1.img_index];
 		
-		// array_sort(ai_cards, function(elm1, elm2) {return elm1 - elm2;});
-		// array_sort(pl_cards, function(elm1, elm2) {return elm1 - elm2;});
-		
 		// when the option is obvious, make decision base on the only card player played
 		if (pl_cards[0] == pl_cards[1]) {
 			sel = pl_cards[0];

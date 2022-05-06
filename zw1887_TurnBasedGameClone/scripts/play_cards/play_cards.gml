@@ -37,7 +37,18 @@ function play_cards(){
 			index0 = irandom_range(0, 2);
 			ai_selected_card0 = global.hand1[|index0];
 			ds_list_delete(global.hand1, index0);
-			ai_selected_card1 = global.hand1[|irandom_range(0, 1)];
+			// select a different card if there is one
+			if (global.hand1[|0].img_index != ai_selected_card0.img_index && 
+				global.hand1[|1].img_index != ai_selected_card0.img_index) {
+				ai_selected_card1 = global.hand1[|irandom_range(0, 1)];
+			} else if (global.hand1[|0].img_index != ai_selected_card0.img_index) {
+				ai_selected_card1 = global.hand1[|0];
+			} else if (global.hand1[|1].img_index != ai_selected_card0.img_index) {
+				ai_selected_card1 = global.hand1[|1];
+			} else {
+				ai_selected_card1 = global.hand1[|irandom_range(0, 1)];
+			}
+			
 			ds_list_add(global.hand1, ai_selected_card0);
 			ai_selected_card0.target_y = global.ai_hand_y + sprite_get_height(spr_card) + spacing;
 			ai_selected_card1.target_y = global.ai_hand_y + sprite_get_height(spr_card) + spacing;
@@ -47,7 +58,8 @@ function play_cards(){
 		
 		if (mouse_check_button(mb_left) 
 			&& global.selected_card != noone
-			&& !obj_ability.selected) {
+			&& !obj_clairvoyant.selected
+			&& !obj_swap.selected) {
 			// move selected card up
 			if (selected_card0 == noone) {
 				selected_card0 = global.selected_card;
