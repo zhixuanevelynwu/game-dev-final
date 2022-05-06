@@ -5,26 +5,26 @@ function decide_winner(v0, v1){
 		if (v0 != v1) {
 			if (v0 == global.ROCK) {
 				if (v1 == global.SCISSOR) {
-					score0 += 1;
+					global.score0 += 1;
 					audio_play_sound(snd_win, 10, 0);	
 				} else {
-					score1 += 1;
+					global.score1 += 1;
 					audio_play_sound(snd_lose, 10, 0);	
 				}
 			} else if (v0 == global.PAPER) {
 				if (v1 == global.ROCK) {
-					score0 += 1;
+					global.score0 += 1;
 					audio_play_sound(snd_win, 10, 0);	
 				} else {
-					score1 += 1;
+					global.score1 += 1;
 					audio_play_sound(snd_lose, 10, 0);	
 				}
 			} else if (v0 == global.SCISSOR) {
 				if (v1 == global.PAPER) {
-					score0 += 1;
+					global.score0 += 1;
 					audio_play_sound(snd_win, 10, 0);	
 				} else  {
-					score1 += 1;
+					global.score1 += 1;
 					audio_play_sound(snd_lose, 10, 0);		
 				}
 			}

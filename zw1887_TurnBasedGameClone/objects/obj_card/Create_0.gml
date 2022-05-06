@@ -5,7 +5,7 @@ dealt = false;
 in_hand = false; // if this is false, the card belongs to ai
 discarded = false;
 
-target_x = room_width / 10;
+target_x = obj_game_manager.deck_x;
 target_y = room_height / 2;
 
 dist_y = 10;

@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_eye",
-    "path": "sprites/spr_eye/spr_eye.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_ability",
-    "path": "objects/obj_ability/obj_ability.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ability",
-    "path": "folders/Objects/ability.yy",
+    "name": "manager",
+    "path": "folders/Objects/manager.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_clairvoyant",
+  "name": "obj_text_end",
   "tags": [],
   "resourceType": "GMObject",
 }

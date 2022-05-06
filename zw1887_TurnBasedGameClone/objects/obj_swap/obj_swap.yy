@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_ability",
+    "path": "objects/obj_ability/obj_ability.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,11 +23,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"max_time","path":"objects/obj_ability/obj_ability.yy",},"objectId":{"name":"obj_ability","path":"objects/obj_ability/obj_ability.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"my_sprite","path":"objects/obj_ability/obj_ability.yy",},"objectId":{"name":"obj_ability","path":"objects/obj_ability/obj_ability.yy",},"value":"spr_swap","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"my_sprite_gray","path":"objects/obj_ability/obj_ability.yy",},"objectId":{"name":"obj_ability","path":"objects/obj_ability/obj_ability.yy",},"value":"spr_swap_gray","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "ability",
     "path": "folders/Objects/ability.yy",

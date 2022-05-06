@@ -18,7 +18,7 @@ if (!discarded) {
 	}
 	
 	if (displayed && global.state == global.state_takeback) {
-		if (position_meeting(mouse_x, mouse_y, id)) {
+		if (position_meeting(mouse_x, mouse_y, id) && in_hand) {
 			target_y = global.player_hand_y - sprite_get_height(spr_card) - spacing  - dist_y;
 			global.selected_card = id;
 		} else {

@@ -2,27 +2,38 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function compute_decision(){
 	with (obj_game_manager) {
-		available_options = [ai_selected_card0, ai_selected_card1];
+		ai_cards = [ai_selected_card0.img_index, ai_selected_card1.img_index];
+		pl_cards = [selected_card0.img_index, selected_card1.img_index];
+		
+		// array_sort(ai_cards, function(elm1, elm2) {return elm1 - elm2;});
+		// array_sort(pl_cards, function(elm1, elm2) {return elm1 - elm2;});
 		
 		// when the option is obvious, make decision base on the only card player played
-		if (selected_card0.img_index == selected_card1.img_index) {
-			sel = selected_card0.img_index;
-			winning_option = sel == global.SCISSOR ? 1 : sel + 1;
+		if (pl_cards[0] == pl_cards[1]) {
+			sel = pl_cards[0];
+			winning_option = sel == 3 ? 1 : sel + 1;
 			// do we have a card that beats the player?
-			for (i = 0; i < array_length(available_options); i ++) {
-				if (available_options[i].img_index == winning_option) {
+			for (i = 0; i < array_length(ai_cards); i ++) {
+				if (ai_cards[i] == winning_option) {
 					return i;
 				}
 			}
 			// if not, go for a tie
-			for (i = 0; i < array_length(available_options); i ++) {
-				if (available_options[i].img_index == sel) {
+			for (i = 0; i < array_length(ai_cards); i ++) {
+				if (ai_cards[i] == sel) {
 					return i;
 				}
 			}
 			// still none -> play a random card
 			return irandom_range(0, 1);
-		} else {
+		} else if (min(ai_cards[0], ai_cards[1]) == min(pl_cards[0], pl_cards[1]) &&
+					max(ai_cards[0], ai_cards[1]) == max(pl_cards[0], pl_cards[1])) {
+			// when both sides play same cards, select one that beats the other
+			return compare_cards(ai_cards[0], ai_cards[1]);
+		}
+		
+		
+		else {
 			// TODO: decide whether to use the special based on score
 			return irandom_range(0, 1);
 		}
